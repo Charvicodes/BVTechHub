@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Satisfy', cursive;
+    background: url(../images/motivationBG.jpg) no-repeat;
+}
+
+.left {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+}
+
+.left img {
+    width: 150px;
+}
+
+.left div {
+    text-align: left;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 200px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card{
+    cursor: pointer;
+    position: relative;
+    width: 380px;
+    height: 550px;
+    margin: 25px 20px;
+    background: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 90px;
+}
+
+.container .card .layer{
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover .layer{
+    top: 0;
+}
+
+.container .card .content{
+    position: relative;
+    z-index: 2;
+}
+
+.container .card .content .quote{
+    max-width: 48px;
+}
+.container .card .content p{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 37px;
+    color: #fff;
+}
+
+.container .card .content .author h2{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 800;    
+}
