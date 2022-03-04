@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS for the background of the webpage */
+body {
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../images/projectIdeasBG.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Accordions are useful when you want to toggle 
+between hiding and showing large amount of content */
+.accordion {
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* To position accordion in right to the heading */
+
+/* To adjust the width of the accordion */
+.accordion .container-1 {
+  flex: 1;
+  margin: 20px 40px;
+  width: 60%;
+}
+
+.accordion .container-2 {
+  float: right;
+  margin: 1px 40px;
+  width: 60%;
+}
+
+.accordion .contentBx {
+  position: relative;
+  margin: 10px 0px;
+}
+
+/* To adjust the space in between the accordions */
+
+.accordion .contentBx .label {
+  position: relative;
+  padding: 10px;
+  background: lightsteelblue;
+  color: black;
+  font-family: "Potta One", cursive;
+  cursor: pointer;
+}
+
+/* To manage the CSS of the labels of accordion */
+
+.accordion .contentBx .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+/* To manage the CSS of the '+' on the labels of accordion */
+
+.accordion .contentBx .content {
+  position: relative;
+  background: lightgreen;
+  font-family: "Pangolin", cursive;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+/* To place the description of the project idea in a container */
+
+.accordion .contentBx.active .content {
+  height: auto;
+  padding: 10px;
+}
+
+/* To control the up and down movement of the accordion */
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000000;
+  text-decoration: none;
+  color: darkblue;
+}
+
+/* To remove the line that comes under heading when we add URL's */
+
+.left img {
+  width: 140px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* CSS for logo */
