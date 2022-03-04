@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Feb, 2022, 2:49:11 PM
+    Author     : Charvi Rajpal
+*/
+
+body {
+    background: url("../images/suggestion1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    color: black;
+}
+
+.heading {
+    text-align: center;
+}
+
+h2 {
+    font-size: 4vw;
+    font-family: "Potta One", cursive;
+    color:mediumseagreen;
+    
+}
+
+.introduction{
+    display: flex;
+    justify-content: center;
+   
+}
+.left img {
+        width: 150px;
+        margin-left: 32px;
+      }
+.introduction img{
+    float: left; 
+    margin: 5px;
+    width: 500px;
+    height: 300px;
+    border: 3px solid coral;
+    border-radius: 50px;
+}
+
+.introduction p span{
+    text-align: justify;
+    font-size: 32px;  
+    font-family: 'Acme', sans-serif;
+    display: block;
+    padding: 0px 36px;
+}
+
+.tips{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.tips img{
+    float: left; 
+    margin: 5px;
+    width: 450px;
+    height: 350px;
+    border: 3px solid yellow;
+    border-radius: 50px;
+}
+
+.tips h3{
+    font-family: "Potta One", cursive; 
+    font-size: 34px;   
+    color: deeppink;
+    
+    margin-left: 20px;
+}
+.tips p{
+    text-align: justify;
+    font-size: 28px;  
+    font-family: 'Acme', sans-serif;
+    display: block;
+    padding: 0px 36px;
+    
+}
+
+.topics h3 .link-effect{
+    font-family: "Potta One", cursive; 
+    font-size: 41px;   
+    color: deeppink;  
+    text-decoration: none;
+}
+.topics{
+    text-align: justify;
+    font-size: 27px;  
+    font-family: 'Acme', sans-serif;
+    display: block;
+    padding: 0px 36px;    
+}
+
+.topics #heading p{
+    font-size: 42px;
+}
+
+
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
